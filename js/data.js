@@ -12,31 +12,10 @@ const account = [
   { month: 8, income: 450, expense: 120 },
   { month: 12, expense: 200 },
 ];
-const mo = [
-  "sausis",
-  "vasaris",
-  "kovas",
-  "baandis",
-  "geguze",
-  "birzelis",
-  "birzelis",
-  "birzelis",
-  "birzelis",
-  "birzelis",
-  "birzelis",
-  "birzelis",
-];
 
+//sorting from 1 to 12
 account.sort(function (a, b) {
   return a.month - b.month;
 });
 
-// const newState = account.map((obj) =>
-//   obj.month === 1 ? { ...obj, month: mo[0] } : obj
-// );
-
-const result = account.map(function (obj) {
-  return obj.month === 2 ? { ...obj, month: mo[2] } : obj;
-});
-
-export { account, mo, result };
+export { account };
